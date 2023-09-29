@@ -16,6 +16,7 @@ public class Pausa : MonoBehaviour
     }
     void PauseGame(){
             if (gameIsPaused){
+                Time.timeScale = 0;
                 pauseMenu.SetActive(true);
             }else{
                 Time.timeScale = 1;
