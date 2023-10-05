@@ -76,11 +76,9 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
     private void Awake()
     {
         stepRayUpper.transform.position = new Vector3(stepRayUpper.transform.position.x, stepHeight, stepRayUpper.transform.position.z);
-
     }
 
     void subirEscalon()
@@ -93,6 +91,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.gameObject.transform.position -= new Vector3(0f, -stepSmooth, 0f);
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "collectable")
+        {
+            ScoreManager.instance.AddPoint();
+            Destroy(other.gameObject);
         }
     }
 
