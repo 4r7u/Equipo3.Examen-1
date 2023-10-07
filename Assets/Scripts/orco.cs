@@ -39,4 +39,12 @@ public class orco : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag=="carril")
+        velocidad *= -1;
+        this.transform.rotation = Quaternion.Euler(0f, this.transform.rotation.y*-1, 0f);
+    }
+
 }
