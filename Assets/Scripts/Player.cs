@@ -62,7 +62,12 @@ public class Player : MonoBehaviour
 
     public void pisarTrampa()
     {
-        Debug.Log("Piso la trampa: game over");
+        Debug.Log("Piso la trampa: GAME OVER");
+    }
+
+    public void chocaOrco()
+    {
+        Debug.Log("Choca contra Orco: GAME OVER");
     }
 
 }
