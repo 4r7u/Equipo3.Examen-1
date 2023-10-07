@@ -72,10 +72,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         /*escalar*/
-        subirEscalon();
+        //subirEscalon();
 
     }
 
+
+    /*
     private void Awake()
     {
         stepRayUpper.transform.position = new Vector3(stepRayUpper.transform.position.x, stepHeight, stepRayUpper.transform.position.z);
@@ -93,6 +95,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+*/
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -102,5 +106,6 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+    
 
 }
