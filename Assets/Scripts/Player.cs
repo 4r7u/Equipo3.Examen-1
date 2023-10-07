@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -63,11 +64,13 @@ public class Player : MonoBehaviour
     public void pisarTrampa()
     {
         Debug.Log("Piso la trampa: GAME OVER");
+        SceneManager.LoadScene(3);
     }
 
     public void chocaOrco()
     {
         Debug.Log("Choca contra Orco: GAME OVER");
+        SceneManager.LoadScene(3);
     }
 
 }

@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mapa.unity
     guid: 1b20453daef723d41a7efe749b2a7ab3
+  - enabled: 1
+    path: Assets/Scenes/Ganaste.unity
+    guid: d2f631a08ebbd5b4e9040515b001e89f
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 4f5296bf325cccc4a87f119516840080
   m_configObjects: {}
