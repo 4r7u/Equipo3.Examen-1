@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
         {
             this.transform.rotation = Quaternion.Euler(0f, 90f * horizontal, 0f);
         }
-
         float vertical = Input.GetAxisRaw("Vertical");
         if (vertical != 0f)
         {
@@ -33,12 +32,8 @@ public class Player : MonoBehaviour
 
         Vector3 direccion = new Vector3(horizontal, 0f, vertical).normalized;
         Gravedad();
-
-        
-
+              
         controlador.Move(direccion * velocidad * Time.deltaTime);
-
-
     }
 
     private void Gravedad()
